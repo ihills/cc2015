@@ -1,0 +1,245 @@
+
+
+Started GET "/eventos/new" for 127.0.0.1 at 2014-11-17 14:40:13 -0300
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (76.3ms)
+  [1m[36m (248.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (62.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (7.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEventos (20141117173923)
+  [1m[35m (52.9ms)[0m  CREATE TABLE `eventos` (`id` int(11) auto_increment PRIMARY KEY, `nombre` varchar(255), `fecha` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (10.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141117173923')
+  [1m[36m (8.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (10.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/eventos/new" for 127.0.0.1 at 2014-11-17 14:42:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (8.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EventosController#new as HTML
+  Rendered eventos/_form.html.erb (124.9ms)
+  Rendered eventos/new.html.erb within layouts/application (139.8ms)
+Completed 200 OK in 1010ms (Views: 918.6ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:43 -0300
+
+
+Started POST "/eventos" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+Processing by EventosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZBRFZu6seRJE0YS9B5qQYrn/L9Z08Wvw0yltCSjN2Ks=", "evento"=>{"nombre"=>"primero", "fecha(1i)"=>"2014", "fecha(2i)"=>"11", "fecha(3i)"=>"17", "fecha(4i)"=>"17", "fecha(5i)"=>"42"}, "commit"=>"Create Evento"}
+  [1m[35m (8.0ms)[0m  BEGIN
+  [1m[36mSQL (8.2ms)[0m  [1mINSERT INTO `eventos` (`created_at`, `fecha`, `nombre`, `updated_at`) VALUES ('2014-11-17 17:42:53', '2014-11-17 17:42:00', 'primero', '2014-11-17 17:42:53')[0m
+  [1m[35m (6.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/eventos/1
+Completed 302 Found in 28ms (ActiveRecord: 22.9ms)
+
+
+Started GET "/eventos/1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+Processing by EventosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvento Load (8.1ms)[0m  [1mSELECT  `eventos`.* FROM `eventos`  WHERE `eventos`.`id` = 1 LIMIT 1[0m
+  Rendered eventos/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 55ms (Views: 44.1ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 14:42:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (6.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateNoticia (20141117175215)
+  [1m[36mActiveRecord::SchemaMigration Load (15.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateNoticia (20141117175403)
+  [1m[36mActiveRecord::SchemaMigration Load (9.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateNoticia (20141117175450)
+  [1m[36mActiveRecord::SchemaMigration Load (14.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateNoticia (20141117175521)
+  [1m[36mActiveRecord::SchemaMigration Load (10.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateNoticia (20141117175554)
+  [1m[36mActiveRecord::SchemaMigration Load (6.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateNoticia (20141117175622)
+  [1m[35m (45.5ms)[0m  CREATE TABLE `noticia` (`id` int(11) auto_increment PRIMARY KEY, `id_noticia` int(11), `fecha` date, `titulo` varchar(255), `subtitulo` varchar(255), `foto` varchar(255), `texto` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (6.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141117175622')
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (6.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (21.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTiendas (20141117175803)
+  [1m[35m (34.3ms)[0m  CREATE TABLE `tiendas` (`id` int(11) auto_increment PRIMARY KEY, `id_tienda` int(11), `nombre` varchar(255), `facebook` varchar(255), `twitter` varchar(255), `sitio` varchar(255), `correo` varchar(255), `telefono` varchar(255), `logo` varchar(255), `descripcion` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (7.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141117175803')
+  [1m[36m (7.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (6.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (13.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateAlojamientos (20141117175852)
+  [1m[35m (46.9ms)[0m  CREATE TABLE `alojamientos` (`id` int(11) auto_increment PRIMARY KEY, `id_aloja` varchar(255), `nombre` varchar(255), `sitio` varchar(255), `coreo` varchar(255), `telefono` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (12.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (29.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141117175852')
+  [1m[36m (16.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (13.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/noticias/new" for 127.0.0.1 at 2014-11-17 15:20:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (7.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActionController::RoutingError (No route matches [GET] "/noticias/new"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.6ms)
+
+
+Started GET "/noticia/new" for 127.0.0.1 at 2014-11-17 15:20:43 -0300
+Processing by NoticiaController#new as HTML
+  Rendered noticia/_form.html.erb (60.4ms)
+  Rendered noticia/new.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 874ms (Views: 810.3ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/assets/tiendas.css?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/tiendas.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/noticia.css?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/alojamientos.css?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/eventos.css?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:44 -0300
+
+
+Started GET "/assets/alojamientos.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:45 -0300
+
+
+Started GET "/assets/noticia.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:45 -0300
+
+
+Started GET "/assets/eventos.js?body=1" for 127.0.0.1 at 2014-11-17 15:20:45 -0300

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_noticia: 1
+  fecha: 2014-11-17
+  titulo: MyString
+  subtitulo: MyString
+  foto: MyString
+  texto: MyText
+
+two:
+  id_noticia: 1
+  fecha: 2014-11-17
+  titulo: MyString
+  subtitulo: MyString
+  foto: MyString
+  texto: MyText

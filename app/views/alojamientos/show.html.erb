@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id aloja:</strong>
+  <%= @alojamiento.id_aloja %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @alojamiento.nombre %>
+</p>
+
+<p>
+  <strong>Sitio:</strong>
+  <%= @alojamiento.sitio %>
+</p>
+
+<p>
+  <strong>Coreo:</strong>
+  <%= @alojamiento.coreo %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @alojamiento.telefono %>
+</p>
+
+<%= link_to 'Edit', edit_alojamiento_path(@alojamiento) %> |
+<%= link_to 'Back', alojamientos_path %>

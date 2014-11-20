@@ -1,0 +1,37 @@
+<%= form_for(@alojamiento) do |f| %>
+  <% if @alojamiento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alojamiento.errors.count, "error") %> prohibited this alojamiento from being saved:</h2>
+
+      <ul>
+      <% @alojamiento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_aloja %><br>
+    <%= f.text_field :id_aloja %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :sitio %><br>
+    <%= f.text_field :sitio %>
+  </div>
+  <div class="field">
+    <%= f.label :coreo %><br>
+    <%= f.text_field :coreo %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
